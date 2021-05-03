@@ -11,24 +11,24 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+// importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts(
-  "/precache-manifest.ea7fe52f953915a7590ba02db77767eb.js"
-);
+// importScripts(
+//   "/precache-manifest.f083c21a2d5920e75f8a19de405e25dd.js"
+// );
 
-workbox.core.setCacheNameDetails({prefix: "homepricecheck"});
+// workbox.core.setCacheNameDetails({prefix: "homepricecheck"});
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+// self.addEventListener('message', (event) => {
+//   if (event.data && event.data.type === 'SKIP_WAITING') {
+//     self.skipWaiting();
+//   }
+// });
 
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+// /**
+//  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+//  * requests for URLs in the manifest.
+//  * See https://goo.gl/S9QRab
+//  */
+// self.__precacheManifest = [].concat(self.__precacheManifest || []);
+// workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
